@@ -1,0 +1,211 @@
+[
+    {
+        "short_name_district": "HORGUES ODOS FC",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "C",
+        "season": 2020,
+        "number": 9,
+        "code": 1,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "FA",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "Football d'animation Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES ODOS FC",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "C",
+        "season": 2020,
+        "number": 10,
+        "code": 2,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "FA",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "Football d'animation Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES ODOS FC",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "C",
+        "season": 2020,
+        "number": 11,
+        "code": 3,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "FA",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "Football d'animation Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES ODOS F.C.",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "C",
+        "season": 2020,
+        "number": 1,
+        "code": 1,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "SEM",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "Senior Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES ODOS F.C.",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "C",
+        "season": 2020,
+        "number": 2,
+        "code": 2,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "SEM",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "Senior Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES ODOS F.C.",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "C",
+        "season": 2020,
+        "number": 3,
+        "code": 3,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "SEM",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "Senior Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES ODOS FC",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "C",
+        "season": 2020,
+        "number": 8,
+        "code": 1,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "U13",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "U13 - U12 Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES ODOS FC",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "C",
+        "season": 2020,
+        "number": 7,
+        "code": 2,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "U13",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "U13 - U12 Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES.ODOS.BARBAZ.",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "E",
+        "season": 2020,
+        "number": 4,
+        "code": 1,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "U15",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "U15 - U14 Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES ODOS F.C.",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "C",
+        "season": 2020,
+        "number": 5,
+        "code": 2,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "U15",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "U15 - U14 Libre",
+        "category_gender": "M"
+    },
+    {
+        "short_name_district": "HORGUES ODOS.BORDES",
+        "short_name_league": "HORGUES ODOS F.C.",
+        "short_name_federation": "HORGUES ODOS F.C.",
+        "type": "E",
+        "season": 2020,
+        "number": 6,
+        "code": 1,
+        "club": {
+            "id": 177005,
+            "name": "HORGUES ODOS F.C.",
+            "short_name": "HORGUES ODOS F.C.",
+            "logo": null
+        },
+        "category_code": "U17",
+        "short_name": "HORGUES ODOS F.C.",
+        "category_label": "U17 - U16 Libre",
+        "category_gender": "M"
+    }
+]
