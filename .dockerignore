@@ -5,4 +5,4 @@ logs/
 .editorconfig
 Dockerfile.dev
 tslint.json
-docker-publish.yml
+.github/
