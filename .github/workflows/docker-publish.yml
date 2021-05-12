@@ -65,6 +65,11 @@ jobs:
           USERNAME: ${{ secrets.Username }}
           SERVER: ${{ secrets.Server }}
           KEY: ${{ secrets.Key }}
+          FFF_CLIENT_ID: ${{ secrets.FFF_CLIENT_ID }}
+          FFF_CLIENT_SECRET: ${{ secrets.FFF_CLIENT_SECRET }}
+          FFF_USERNAME: ${{ secrets.FFF_USERNAME }}
+          FFF_PASSWORD: ${{ secrets.FFF_PASSWORD }}
+          FFF_TOKEN_PASSWORD: ${{ secrets.FFF_TOKEN_PASSWORD }}
         run: |
           echo "$KEY" > private_key.ppk && chmod 600 private_key.ppk
           mkdir ~/.ssh && touch ~/.ssh/known_hosts
@@ -72,4 +77,4 @@ jobs:
           ssh -i private_key.ppk "$USERNAME"@"$SERVER" docker login docker.pkg.github.com -u ${{ github.actor }} -p "${{ secrets.GITHUB_TOKEN }}"
           ssh -i private_key.ppk "$USERNAME"@"$SERVER" docker pull docker.pkg.github.com/orome656/fff-system-api/fff-system-api:latest
           ssh -i private_key.ppk "$USERNAME"@"$SERVER" docker stop fff-system || true && docker rm fff-system || true
-          ssh -i private_key.ppk "$USERNAME"@"$SERVER" docker run --name fff-system -p 5000:5000 --restart unless-stopped docker.pkg.github.com/orome656/fff-system-api/fff-system-api:latest
+          ssh -i private_key.ppk "$USERNAME"@"$SERVER" docker run -d --env fff_client_id="$FFF_CLIENT_ID" --env fff_client_secret="$FFF_CLIENT_SECRET" --env fff_username="$FFF_USERNAME" --env fff_password="$FFF_PASSWORD" --env fff_token_password="$FFF_TOKEN_PASSWORD" --name fff-system -p 5000:5000 --restart unless-stopped docker.pkg.github.com/orome656/fff-system-api/fff-system-api:latest
