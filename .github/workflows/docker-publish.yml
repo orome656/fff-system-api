@@ -67,6 +67,7 @@ jobs:
           KEY: ${{ secrets.Key }}
         run: |
           echo "$KEY" > private_key.ppk && chmod 600 private_key.ppk
+          mkdir ~/.ssh && touch ~/.ssh/known_hosts
           ssh-keyscan "$SERVER" >> ~/.ssh/known_hosts
           ssh -i private_key.ppk "$USERNAME"@"$SERVER" docker pull docker.pkg.github.com/orome656/fff-system-api/fff-system-api:latest
           ssh -i private_key.ppk "$USERNAME"@"$SERVER" docker stop fff-system || true && docker rm fff-system || true
