@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "This is a simple REST API developed using node and express with typescript",
   "scripts": {
-    "start": "npm run transpile && node server.js",
+    "start": "npm run transpile && node bin/server.js",
     "dev": "concurrently \"npm:watch\" \"npm:serve\"",
-    "serve": "nodemon server.js",
+    "serve": "nodemon bin/server.js",
     "watch": "tsc -w",
     "transpile": "tsc",
     "seed": "npm run transpile && node src/db/seed.js",
