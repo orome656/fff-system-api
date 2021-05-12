@@ -70,6 +70,8 @@ jobs:
           FFF_USERNAME: ${{ secrets.FFF_USERNAME }}
           FFF_PASSWORD: ${{ secrets.FFF_PASSWORD }}
           FFF_TOKEN_PASSWORD: ${{ secrets.FFF_TOKEN_PASSWORD }}
+          API_USER: ${{ secrets.API_USER }}
+          API_PASSWORD: ${{ secrets.API_PASSWORD }}
         run: |
           echo "$KEY" > private_key.ppk && chmod 600 private_key.ppk
           mkdir ~/.ssh && touch ~/.ssh/known_hosts
@@ -81,4 +83,4 @@ jobs:
           echo "Force docker remove if exist"
           ssh -i private_key.ppk "$USERNAME"@"$SERVER" 'docker rm --force fff-system || true'
           echo "start new container"
-          ssh -i private_key.ppk "$USERNAME"@"$SERVER" docker run -d --net=host --env fff_client_id="$FFF_CLIENT_ID" --env fff_client_secret="$FFF_CLIENT_SECRET" --env fff_username="$FFF_USERNAME" --env fff_password="$FFF_PASSWORD" --env fff_token_password="$FFF_TOKEN_PASSWORD" --name fff-system --restart unless-stopped docker.pkg.github.com/orome656/fff-system-api/fff-system-api:latest
+          ssh -i private_key.ppk "$USERNAME"@"$SERVER" docker run -d --net=host --env api_user="$API_USER" --env api_password="$API_PASSWORD" --env fff_client_id="$FFF_CLIENT_ID" --env fff_client_secret="$FFF_CLIENT_SECRET" --env fff_username="$FFF_USERNAME" --env fff_password="$FFF_PASSWORD" --env fff_token_password="$FFF_TOKEN_PASSWORD" --name fff-system --restart unless-stopped docker.pkg.github.com/orome656/fff-system-api/fff-system-api:latest
