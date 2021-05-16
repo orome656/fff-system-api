@@ -7,7 +7,6 @@ export default class Routes {
 
   constructor(app: Application) {
     app.use(cors())
-    // course reoutes
     app.options('*', cors())
     app.route('/api/matchs/').get(this.matchsCtrl.getAllMatchs);
     app.route('/api/competitions/').get(this.matchsCtrl.getAllCompetitions);
