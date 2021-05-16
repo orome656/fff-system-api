@@ -26,6 +26,9 @@ export default class Server {
     );
     app.use((req, res, next) => {
 
+      if (req.method == "OPTIONS")
+        return next()
+
       const auth = {
         login: process.env.api_user, password: process.env.api_password
       }
