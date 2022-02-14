@@ -16,7 +16,7 @@ class MatchConverter implements IConverter<Match> {
             commentaire: this.computeComment(object),
             reporte: this.computeDelayed(object)
         }
-        
+
 
         return match
     }
