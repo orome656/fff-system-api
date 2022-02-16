@@ -9,11 +9,11 @@ export default class MatchsCtrl {
     this.matchRepo = new MatchsRepo(new FFFClient(
       'https://apidofa.fff.fr/api',
       {
-        client_id: process.env.client_id,
-        client_secret: process.env.client_secret,
-        token_password: process.env.token_password,
-        username: process.env.username,
-        password: process.env.password,
+        client_id: process.env.fff_client_id,
+        client_secret: process.env.fff_client_secret,
+        token_password: process.env.fff_token_password,
+        username: process.env.fff_username,
+        password: process.env.fff_password,
         tokenUrl: 'https://apidofa.fff.fr/oauth/v2/token'
       }
     ))
