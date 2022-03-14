@@ -24,7 +24,11 @@ export default class MatchsCtrl {
     res.json(response)
   }
   async getAllCompetitions(req: Request, res: Response, next: NextFunction) {
-    var response = await this.matchRepo.getAllCompetitions()
+    var response = await this.matchRepo.getAllCompetitions(req.params['season'])
+    res.json(response)
+  }
+  async getAllTeams(req: Request, res: Response, next: NextFunction) {
+    var response = await this.matchRepo.getTeams()
     res.json(response)
   }
 }

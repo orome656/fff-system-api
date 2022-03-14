@@ -30,7 +30,7 @@ export default class Server {
         return next()
 
       const auth = {
-        login: process.env.api_user, password: process.env.api_password
+        login: process.env.fff_api_user, password: process.env.fff_api_password
       }
 
       const b64auth = (req.headers.authorization || '').split(' ')[1] || ''

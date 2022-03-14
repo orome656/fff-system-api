@@ -10,5 +10,6 @@ export default class Routes {
     app.options('*', cors())
     app.route('/api/matchs/').get(this.matchsCtrl.getAllMatchs.bind(this.matchsCtrl));
     app.route('/api/competitions/').get(this.matchsCtrl.getAllCompetitions.bind(this.matchsCtrl));
+    app.route('/api/teams/').get(this.matchsCtrl.getAllTeams.bind(this.matchsCtrl));
   }
 }

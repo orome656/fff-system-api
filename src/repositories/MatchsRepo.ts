@@ -30,14 +30,27 @@ class MatchRepo {
 
     return converted;
   }
-  async getAllCompetitions(): Promise<Array<Object>> {
+  async getAllCompetitions(season?: String): Promise<Array<Object>> {
     var teams = await this.apiClient.get(`/competitions`, {
       "clubId": TEAM_ID,
-      "season": "2021",
+      "season": season ?? this.getCurrentSeason(),
       "teamNumber": "1"
     });
 
     return teams.body;
+  }
+
+  async getTeams(): Promise<Array<Object>> {
+    return (await this.apiClient.get(`/clubs/${TEAM_ID}/teams`, null)).body
+  }
+
+  private getCurrentSeason(): String {
+    var today = new Date()
+    if (today.getMonth() >= 6) {
+      return String(today.getFullYear())
+    } else {
+      return String(today.getFullYear() - 1)
+    }
   }
 }
 
